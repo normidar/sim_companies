@@ -1,0 +1,73 @@
+{
+  "authCompany": {
+    "companyId": 2009918,
+    "company": "figbox",
+    "moderatorSign": false,
+    "hqImage": "hq-uk-bell-tower.png",
+    "money": 2439539,
+    "exchangedToday": 0,
+    "simBoosts": 295,
+    "popupNotifications": {
+      "help": true,
+      "sale": true,
+      "social": true,
+      "other": true,
+      "contract": true
+    },
+    "productionModifier": 8,
+    "salesModifier": -3,
+    "countryCodeIsoUserSet": "JP",
+    "rank": 3452,
+    "extraExecutiveSlots": 4,
+    "extraBuildingSlots": 4,
+    "displayCaseSlots": 1,
+    "logo": "https://d1fxy698ilbz6u.cloudfront.net/logo/d96e0581890c87651098f18448a031620861ff95.png",
+    "startingPackPurchased": false,
+    "maxTags": 1,
+    "courseId": null,
+    "showOnlineIndicator": true,
+    "testCategory": 0,
+    "level": 23,
+    "realmId": 0
+  },
+  "authUser": {
+    "playerId": 834716,
+    "isModerator": false,
+    "auditAccess": false,
+    "newspaperEditor": false,
+    "isAdmin": false,
+    "aiSuggestions": false,
+    "supporterPurchased": false,
+    "supporter": false,
+    "countryCodeIso": "JP",
+    "email": "normidar7@gmail.com",
+    "bouncingEmail": false,
+    "language": "en",
+    "age18": true,
+    "communicationRestricted": false,
+    "featureFlags": ""
+  },
+  "levelInfo": {
+    "ratingCode": "AAA",
+    "levelName": "Limited company",
+    "level": 23,
+    "inTutorial": false,
+    "acceleration": { "multiplier": 1, "until": null },
+    "experience": 317983,
+    "experienceToNextLevel": 400000,
+    "maxBuildings": 10,
+    "capabilities": {
+      "research": true,
+      "scrape": true,
+      "bonds": true,
+      "governmentOrders": true,
+      "executives": true,
+      "hqUpdates": true
+    },
+    "timeLimit": 172800
+  },
+  "temporals": { "sale": "", "contest": {}, "economyState": 0 },
+  "preferences": { "theme": "Light" },
+  "encKey": null,
+  "courses": []
+}
