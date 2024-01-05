@@ -26,21 +26,19 @@ class Displays extends Product {
   @override
   List<Product> get neededFor => [
         SmartPhones.one(),
-Tablets.one(),
-Laptops.one(),
-Monitors.one(),
-Televisions.one(),
-LuxuryCarInterior.one(),
-BasicInterior.one(),
-Cockpit.one(),
-
+        Tablets.one(),
+        Laptops.one(),
+        Monitors.one(),
+        Televisions.one(),
+        LuxuryCarInterior.one(),
+        BasicInterior.one(),
+        Cockpit.one(),
       ];
 
   @override
   List<Product> get producedFrom => [
         Silicon(quality: 0, quantity: d(5.0)),
-Chemicals(quality: 0, quantity: d(4.0)),
-
+        Chemicals(quality: 0, quantity: d(4.0)),
       ];
 
   @override

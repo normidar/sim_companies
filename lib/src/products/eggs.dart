@@ -26,15 +26,13 @@ class Eggs extends Product {
   @override
   List<Product> get neededFor => [
         Dough.one(),
-Pasta.one(),
-
+        Pasta.one(),
       ];
 
   @override
   List<Product> get producedFrom => [
         Water(quality: 0, quantity: d(0.4)),
-Grain(quality: 0, quantity: d(0.5)),
-
+        Grain(quality: 0, quantity: d(0.5)),
       ];
 
   @override

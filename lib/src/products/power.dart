@@ -26,39 +26,36 @@ class Power extends Product {
   @override
   List<Product> get neededFor => [
         Water.one(),
-Ethanol.one(),
-CrudeOil.one(),
-Methane.one(),
-Petrol.one(),
-Diesel.one(),
-Transport.one(),
-Minerals.one(),
-Bauxite.one(),
-GoldOre.one(),
-Silicon.one(),
-Chemicals.one(),
-Aluminium.one(),
-Plastic.one(),
-GoldenBars.one(),
-Fabric.one(),
-IronOre.one(),
-Steel.one(),
-Sand.one(),
-Glass.one(),
-CarbonFibers.one(),
-RocketFuel.one(),
-Clay.one(),
-Limestone.one(),
-SteelBeams.one(),
-VegetableOil.one(),
-Sugar.one(),
-
+        Ethanol.one(),
+        CrudeOil.one(),
+        Methane.one(),
+        Petrol.one(),
+        Diesel.one(),
+        Transport.one(),
+        Minerals.one(),
+        Bauxite.one(),
+        GoldOre.one(),
+        Silicon.one(),
+        Chemicals.one(),
+        Aluminium.one(),
+        Plastic.one(),
+        GoldenBars.one(),
+        Fabric.one(),
+        IronOre.one(),
+        Steel.one(),
+        Sand.one(),
+        Glass.one(),
+        CarbonFibers.one(),
+        RocketFuel.one(),
+        Clay.one(),
+        Limestone.one(),
+        SteelBeams.one(),
+        VegetableOil.one(),
+        Sugar.one(),
       ];
 
   @override
-  List<Product> get producedFrom => [
-        
-      ];
+  List<Product> get producedFrom => [];
 
   @override
   Num get transportation => d(0.0);

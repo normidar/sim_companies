@@ -26,21 +26,19 @@ class Batteries extends Product {
   @override
   List<Product> get neededFor => [
         SmartPhones.one(),
-Tablets.one(),
-Laptops.one(),
-EconomyE-car.one(),
-LuxuryE-car.one(),
-AttitudeControl.one(),
-IonDrive.one(),
-Quadcopter.one(),
-Tools.one(),
-
+        Tablets.one(),
+        Laptops.one(),
+        EconomyECar.one(),
+        LuxuryECar.one(),
+        AttitudeControl.one(),
+        IonDrive.one(),
+        Quadcopter.one(),
+        Tools.one(),
       ];
 
   @override
   List<Product> get producedFrom => [
         Chemicals(quality: 0, quantity: d(4.0)),
-
       ];
 
   @override

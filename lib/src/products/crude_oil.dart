@@ -26,16 +26,14 @@ class CrudeOil extends Product {
   @override
   List<Product> get neededFor => [
         Petrol.one(),
-Diesel.one(),
-Plastic.one(),
-CarbonFibers.one(),
-
+        Diesel.one(),
+        Plastic.one(),
+        CarbonFibers.one(),
       ];
 
   @override
   List<Product> get producedFrom => [
         Power(quality: 0, quantity: d(25.0)),
-
       ];
 
   @override

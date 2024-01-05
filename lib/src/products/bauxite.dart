@@ -26,14 +26,12 @@ class Bauxite extends Product {
   @override
   List<Product> get neededFor => [
         Aluminium.one(),
-
       ];
 
   @override
   List<Product> get producedFrom => [
         Power(quality: 0, quantity: d(14.0)),
-Water(quality: 0, quantity: d(0.5)),
-
+        Water(quality: 0, quantity: d(0.5)),
       ];
 
   @override

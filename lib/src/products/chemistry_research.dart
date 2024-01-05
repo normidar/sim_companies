@@ -24,14 +24,10 @@ class ChemistryResearch extends Product {
   String get name => 'ChemistryResearch';
 
   @override
-  List<Product> get neededFor => [
-        
-      ];
+  List<Product> get neededFor => [];
 
   @override
-  List<Product> get producedFrom => [
-        
-      ];
+  List<Product> get producedFrom => [];
 
   @override
   Num get transportation => d(0.0);

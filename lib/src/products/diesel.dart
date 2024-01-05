@@ -26,16 +26,14 @@ class Diesel extends Product {
   @override
   List<Product> get neededFor => [
         Transport.one(),
-ConstructionUnits.one(),
-
+        ConstructionUnits.one(),
       ];
 
   @override
   List<Product> get producedFrom => [
         Power(quality: 0, quantity: d(15.0)),
-CrudeOil(quality: 0, quantity: d(0.75)),
-Ethanol(quality: 0, quantity: d(0.25)),
-
+        CrudeOil(quality: 0, quantity: d(0.75)),
+        Ethanol(quality: 0, quantity: d(0.25)),
       ];
 
   @override

@@ -24,18 +24,15 @@ class SmartPhones extends Product {
   String get name => 'SmartPhones';
 
   @override
-  List<Product> get neededFor => [
-        
-      ];
+  List<Product> get neededFor => [];
 
   @override
   List<Product> get producedFrom => [
         Processors(quality: 0, quantity: d(2.0)),
-ElectronicComponents(quality: 0, quantity: d(1.0)),
-Batteries(quality: 0, quantity: d(1.0)),
-Displays(quality: 0, quantity: d(1.0)),
-Aluminium(quality: 0, quantity: d(2.0)),
-
+        ElectronicComponents(quality: 0, quantity: d(1.0)),
+        Batteries(quality: 0, quantity: d(1.0)),
+        Displays(quality: 0, quantity: d(1.0)),
+        Aluminium(quality: 0, quantity: d(2.0)),
       ];
 
   @override

@@ -26,14 +26,12 @@ class Steak extends Product {
   @override
   List<Product> get neededFor => [
         Hamburger.one(),
-Lasagna.one(),
-
+        Lasagna.one(),
       ];
 
   @override
   List<Product> get producedFrom => [
         Cows(quality: 0, quantity: d(0.125)),
-
       ];
 
   @override

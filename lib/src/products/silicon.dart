@@ -26,19 +26,17 @@ class Silicon extends Product {
   @override
   List<Product> get neededFor => [
         Processors.one(),
-ElectronicComponents.one(),
-Displays.one(),
-Glass.one(),
-HighGradeE-comps.one(),
-HeatShield.one(),
-
+        ElectronicComponents.one(),
+        Displays.one(),
+        Glass.one(),
+        HighGradeEComps.one(),
+        HeatShield.one(),
       ];
 
   @override
   List<Product> get producedFrom => [
         Power(quality: 0, quantity: d(3.0)),
-Sand(quality: 0, quantity: d(2.0)),
-
+        Sand(quality: 0, quantity: d(2.0)),
       ];
 
   @override

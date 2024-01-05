@@ -26,19 +26,17 @@ class Processors extends Product {
   @override
   List<Product> get neededFor => [
         SmartPhones.one(),
-Tablets.one(),
-Laptops.one(),
-Televisions.one(),
-Robots.one(),
-On-boardComputer.one(),
-
+        Tablets.one(),
+        Laptops.one(),
+        Televisions.one(),
+        Robots.one(),
+        OnBoardComputer.one(),
       ];
 
   @override
   List<Product> get producedFrom => [
         Silicon(quality: 0, quantity: d(4.0)),
-Chemicals(quality: 0, quantity: d(1.0)),
-
+        Chemicals(quality: 0, quantity: d(1.0)),
       ];
 
   @override

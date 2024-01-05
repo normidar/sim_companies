@@ -26,14 +26,12 @@ class Sausages extends Product {
   @override
   List<Product> get neededFor => [
         FrozenPizza.one(),
-MeatBalls.one(),
-
+        MeatBalls.one(),
       ];
 
   @override
   List<Product> get producedFrom => [
         Pigs(quality: 0, quantity: d(0.0625)),
-
       ];
 
   @override

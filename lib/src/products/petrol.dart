@@ -24,16 +24,13 @@ class Petrol extends Product {
   String get name => 'Petrol';
 
   @override
-  List<Product> get neededFor => [
-        
-      ];
+  List<Product> get neededFor => [];
 
   @override
   List<Product> get producedFrom => [
         Power(quality: 0, quantity: d(15.0)),
-CrudeOil(quality: 0, quantity: d(0.75)),
-Ethanol(quality: 0, quantity: d(0.25)),
-
+        CrudeOil(quality: 0, quantity: d(0.75)),
+        Ethanol(quality: 0, quantity: d(0.25)),
       ];
 
   @override

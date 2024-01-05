@@ -24,15 +24,12 @@ class Transport extends Product {
   String get name => 'Transport';
 
   @override
-  List<Product> get neededFor => [
-        
-      ];
+  List<Product> get neededFor => [];
 
   @override
   List<Product> get producedFrom => [
         Diesel(quality: 0, quantity: d(0.005)),
-Power(quality: 0, quantity: d(0.01)),
-
+        Power(quality: 0, quantity: d(0.01)),
       ];
 
   @override

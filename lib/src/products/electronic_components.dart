@@ -26,24 +26,22 @@ class ElectronicComponents extends Product {
   @override
   List<Product> get neededFor => [
         SmartPhones.one(),
-Tablets.one(),
-Laptops.one(),
-Monitors.one(),
-Televisions.one(),
-On-boardComputer.one(),
-ElectricMotor.one(),
-CombustionEngine.one(),
-LuxuryWatch.one(),
-Quadcopter.one(),
-Tools.one(),
-
+        Tablets.one(),
+        Laptops.one(),
+        Monitors.one(),
+        Televisions.one(),
+        OnBoardComputer.one(),
+        ElectricMotor.one(),
+        CombustionEngine.one(),
+        LuxuryWatch.one(),
+        Quadcopter.one(),
+        Tools.one(),
       ];
 
   @override
   List<Product> get producedFrom => [
         Silicon(quality: 0, quantity: d(3.0)),
-Chemicals(quality: 0, quantity: d(1.0)),
-
+        Chemicals(quality: 0, quantity: d(1.0)),
       ];
 
   @override

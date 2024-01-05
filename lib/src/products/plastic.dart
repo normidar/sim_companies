@@ -26,23 +26,21 @@ class Plastic extends Product {
   @override
   List<Product> get neededFor => [
         Laptops.one(),
-Monitors.one(),
-Televisions.one(),
-Robots.one(),
-BasicInterior.one(),
-Dress.one(),
-StilettoHeel.one(),
-Sneakers.one(),
-Quadcopter.one(),
-XmasCrackers.one(),
-
+        Monitors.one(),
+        Televisions.one(),
+        Robots.one(),
+        BasicInterior.one(),
+        Dress.one(),
+        StilettoHeel.one(),
+        Sneakers.one(),
+        Quadcopter.one(),
+        XmasCrackers.one(),
       ];
 
   @override
   List<Product> get producedFrom => [
         Power(quality: 0, quantity: d(5.0)),
-CrudeOil(quality: 0, quantity: d(0.2)),
-
+        CrudeOil(quality: 0, quantity: d(0.2)),
       ];
 
   @override

@@ -24,15 +24,12 @@ class Grapes extends Product {
   String get name => 'Grapes';
 
   @override
-  List<Product> get neededFor => [
-        
-      ];
+  List<Product> get neededFor => [];
 
   @override
   List<Product> get producedFrom => [
         Water(quality: 0, quantity: d(4.0)),
-Seeds(quality: 0, quantity: d(1.0)),
-
+        Seeds(quality: 0, quantity: d(1.0)),
       ];
 
   @override

@@ -26,23 +26,21 @@ class Chemicals extends Product {
   @override
   List<Product> get neededFor => [
         Processors.one(),
-ElectronicComponents.one(),
-Batteries.one(),
-Displays.one(),
-Steel.one(),
-CombustionEngine.one(),
-HighGradeE-comps.one(),
-SolidFuelBooster.one(),
-IonDrive.one(),
-XmasCrackers.one(),
-
+        ElectronicComponents.one(),
+        Batteries.one(),
+        Displays.one(),
+        Steel.one(),
+        CombustionEngine.one(),
+        HighGradeEComps.one(),
+        SolidFuelBooster.one(),
+        IonDrive.one(),
+        XmasCrackers.one(),
       ];
 
   @override
   List<Product> get producedFrom => [
         Power(quality: 0, quantity: d(0.2)),
-Minerals(quality: 0, quantity: d(1.0)),
-
+        Minerals(quality: 0, quantity: d(1.0)),
       ];
 
   @override

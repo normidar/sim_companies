@@ -26,16 +26,14 @@ class Grain extends Product {
   @override
   List<Product> get neededFor => [
         Eggs.one(),
-Flour.one(),
-Fodder.one(),
-
+        Flour.one(),
+        Fodder.one(),
       ];
 
   @override
   List<Product> get producedFrom => [
         Water(quality: 0, quantity: d(0.5)),
-Seeds(quality: 0, quantity: d(1.0)),
-
+        Seeds(quality: 0, quantity: d(1.0)),
       ];
 
   @override

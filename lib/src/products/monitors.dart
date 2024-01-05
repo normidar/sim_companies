@@ -24,16 +24,13 @@ class Monitors extends Product {
   String get name => 'Monitors';
 
   @override
-  List<Product> get neededFor => [
-        
-      ];
+  List<Product> get neededFor => [];
 
   @override
   List<Product> get producedFrom => [
         ElectronicComponents(quality: 0, quantity: d(2.0)),
-Displays(quality: 0, quantity: d(3.0)),
-Plastic(quality: 0, quantity: d(3.0)),
-
+        Displays(quality: 0, quantity: d(3.0)),
+        Plastic(quality: 0, quantity: d(3.0)),
       ];
 
   @override

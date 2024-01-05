@@ -26,15 +26,13 @@ class Minerals extends Product {
   @override
   List<Product> get neededFor => [
         Chemicals.one(),
-XmasOrnament.one(),
-
+        XmasOrnament.one(),
       ];
 
   @override
   List<Product> get producedFrom => [
         Power(quality: 0, quantity: d(20.0)),
-Water(quality: 0, quantity: d(1.0)),
-
+        Water(quality: 0, quantity: d(1.0)),
       ];
 
   @override
