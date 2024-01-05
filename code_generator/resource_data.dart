@@ -43,6 +43,72 @@ class NeededFor {
   }
 }
 
+class ProducedFrom {
+  late final Resource resource;
+  late final double amount;
+  ProducedFrom({
+    required this.resource,
+    required this.amount,
+  });
+
+  ProducedFrom.fromJson(Map<String, dynamic> json) {
+    resource = Resource.fromJson(json['resource']);
+    amount = double.parse(json['amount'].toString());
+  }
+
+  Map<String, dynamic> toJson() {
+    final data = <String, dynamic>{};
+    data['resource'] = resource.toJson();
+    data['amount'] = amount;
+    return data;
+  }
+}
+
+class Resource {
+  late final String name;
+  late final String image;
+  late final int dbLetter;
+  late final double transportation;
+  late final bool retailable;
+  late final bool research;
+  late final bool exchangeTradable;
+  late final bool realmAvailable;
+  Resource({
+    required this.name,
+    required this.image,
+    required this.dbLetter,
+    required this.transportation,
+    required this.retailable,
+    required this.research,
+    required this.exchangeTradable,
+    required this.realmAvailable,
+  });
+
+  Resource.fromJson(Map<String, dynamic> json) {
+    name = json['name'];
+    image = json['image'];
+    dbLetter = json['db_letter'];
+    transportation = json['transportation'];
+    retailable = json['retailable'];
+    research = json['research'];
+    exchangeTradable = json['exchangeTradable'];
+    realmAvailable = json['realmAvailable'];
+  }
+
+  Map<String, dynamic> toJson() {
+    final data = <String, dynamic>{};
+    data['name'] = name;
+    data['image'] = image;
+    data['db_letter'] = dbLetter;
+    data['transportation'] = transportation;
+    data['retailable'] = retailable;
+    data['research'] = research;
+    data['exchangeTradable'] = exchangeTradable;
+    data['realmAvailable'] = realmAvailable;
+    return data;
+  }
+}
+
 class ResourceData {
   late final String name;
   late final String image;
@@ -52,7 +118,7 @@ class ResourceData {
   late final bool research;
   late final bool exchangeTradable;
   late final bool realmAvailable;
-  late final List<dynamic> producedFrom;
+  late final List<ProducedFrom> producedFrom;
   late final void soldAt;
   late final void soldAtRestaurant;
   late final String producedAt;
@@ -100,7 +166,9 @@ class ResourceData {
     research = json['research'];
     exchangeTradable = json['exchangeTradable'];
     realmAvailable = json['realmAvailable'];
-    producedFrom = List.castFrom<dynamic, dynamic>(json['producedFrom']);
+    producedFrom = List.from(json['producedFrom'])
+        .map((e) => ProducedFrom.fromJson(e))
+        .toList();
     soldAt = null;
     soldAtRestaurant = null;
     producedAt = json['producedAt'];
@@ -116,26 +184,5 @@ class ResourceData {
     retailData = List.castFrom<dynamic, dynamic>(json['retailData']);
     improvesQualityOf =
         List.castFrom<dynamic, dynamic>(json['improvesQualityOf']);
-  }
-
-  Map<String, dynamic> toJson() {
-    final data = <String, dynamic>{};
-    data['name'] = name;
-    data['image'] = image;
-    data['db_letter'] = dbLetter;
-    data['transportation'] = transportation;
-    data['retailable'] = retailable;
-    data['research'] = research;
-    data['exchangeTradable'] = exchangeTradable;
-    data['realmAvailable'] = realmAvailable;
-    data['producedFrom'] = producedFrom;
-    data['producedAt'] = producedAt;
-    data['neededFor'] = neededFor.map((e) => e.toJson()).toList();
-    data['transportNeeded'] = transportNeeded;
-    data['producedAnHour'] = producedAnHour;
-    data['baseSalary'] = baseSalary;
-    data['retailData'] = retailData;
-    data['improvesQualityOf'] = improvesQualityOf;
-    return data;
   }
 }

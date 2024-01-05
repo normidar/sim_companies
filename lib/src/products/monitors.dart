@@ -1,7 +1,7 @@
 import 'package:sim_companies/sim_companies.dart';
 
-class Grapes extends Product {
-  const Grapes({
+class Monitors extends Product {
+  const Monitors({
     required Quantity quantity,
     required Quality quality,
   }) : super(
@@ -9,19 +9,19 @@ class Grapes extends Product {
           quality: quality,
         );
 
-  Grapes.one() : super(quality: 0, quantity: d(1));
+  Monitors.one() : super(quality: 0, quantity: d(1));
 
   @override
-  Money get baseSalary => d(103.5);
+  Money get baseSalary => d(379.50000000000006);
 
   @override
   bool get isResearch => false;
 
   @override
-  int get kindCode => 5;
+  int get kindCode => 27;
 
   @override
-  String get name => 'Grapes';
+  String get name => 'Monitors';
 
   @override
   List<Product> get neededFor => [
@@ -30,11 +30,12 @@ class Grapes extends Product {
 
   @override
   List<Product> get producedFrom => [
-        Water(quality: 0, quantity: d(4.0)),
-Seeds(quality: 0, quantity: d(1.0)),
+        ElectronicComponents(quality: 0, quantity: d(2.0)),
+Displays(quality: 0, quantity: d(3.0)),
+Plastic(quality: 0, quantity: d(3.0)),
 
       ];
 
   @override
-  Num get transportation => d(1.0);
+  Num get transportation => d(2.0);
 }

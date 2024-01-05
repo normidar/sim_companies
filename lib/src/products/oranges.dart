@@ -25,12 +25,15 @@ class Oranges extends Product {
 
   @override
   List<Product> get neededFor => [
-        Oranges.one(),
+        OrangeJuice.one(),
+
       ];
 
   @override
   List<Product> get producedFrom => [
-        Oranges.one(),
+        Water(quality: 0, quantity: d(3.0)),
+Seeds(quality: 0, quantity: d(1.0)),
+
       ];
 
   @override

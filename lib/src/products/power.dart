@@ -27,37 +27,37 @@ class Power extends Product {
   List<Product> get neededFor => [
         Water.one(),
 Ethanol.one(),
-Crude oil.one(),
+CrudeOil.one(),
 Methane.one(),
 Petrol.one(),
 Diesel.one(),
 Transport.one(),
 Minerals.one(),
 Bauxite.one(),
-Gold ore.one(),
+GoldOre.one(),
 Silicon.one(),
 Chemicals.one(),
 Aluminium.one(),
 Plastic.one(),
-Golden bars.one(),
+GoldenBars.one(),
 Fabric.one(),
-Iron ore.one(),
+IronOre.one(),
 Steel.one(),
 Sand.one(),
 Glass.one(),
-Carbon fibers.one(),
-Rocket fuel.one(),
+CarbonFibers.one(),
+RocketFuel.one(),
 Clay.one(),
 Limestone.one(),
-Steel beams.one(),
-Vegetable oil.one(),
+SteelBeams.one(),
+VegetableOil.one(),
 Sugar.one(),
-,
+
       ];
 
   @override
   List<Product> get producedFrom => [
-        ,
+        
       ];
 
   @override
