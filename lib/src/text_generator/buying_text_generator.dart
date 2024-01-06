@@ -17,11 +17,15 @@ class BuyingTextGenerator {
     String rt = "$header\n";
     for (var i = 0; i < need.length; i++) {
       final p = need[i];
+      int needQ = product.quality - 1;
+      if (needQ < 0) needQ = 0;
+
       rt += format
-          .replaceAll(qualityFilter, p.quality.toString())
+          .replaceAll(qualityFilter, needQ.toString())
           .replaceAll(imageFilter, ' :re-${p.kindCode}: ')
           .replaceAll(nameFilter, p.name)
-          .replaceAll(quantityFilter, p.quantity.toString());
+          .replaceAll(
+              quantityFilter, (p.quantity * product.quantity).toString());
       rt += '\n';
     }
     rt += footer;
