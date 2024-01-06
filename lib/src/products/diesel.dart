@@ -12,9 +12,6 @@ class Diesel extends Product {
   Diesel.one() : super(quality: 0, quantity: d(1));
 
   @override
-  Money get baseSalary => d(482.99999999999994);
-
-  @override
   bool get isResearch => false;
 
   @override

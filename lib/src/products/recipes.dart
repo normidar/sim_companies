@@ -12,9 +12,6 @@ class Recipes extends Product {
   Recipes.one() : super(quality: 0, quantity: d(1));
 
   @override
-  Money get baseSalary => d(517.5);
-
-  @override
   bool get isResearch => true;
 
   @override

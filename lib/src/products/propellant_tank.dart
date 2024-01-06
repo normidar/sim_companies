@@ -12,9 +12,6 @@ class PropellantTank extends Product {
   PropellantTank.one() : super(quality: 0, quantity: d(1));
 
   @override
-  Money get baseSalary => d(586.5);
-
-  @override
   bool get isResearch => false;
 
   @override

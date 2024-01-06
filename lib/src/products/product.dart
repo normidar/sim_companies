@@ -8,7 +8,6 @@ abstract class Product {
     required this.quality,
   });
 
-  Money get baseSalary;
   bool get isResearch;
   int get kindCode;
   String get name;

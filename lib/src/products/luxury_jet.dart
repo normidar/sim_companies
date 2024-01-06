@@ -12,9 +12,6 @@ class LuxuryJet extends Product {
   LuxuryJet.one() : super(quality: 0, quantity: d(1));
 
   @override
-  Money get baseSalary => d(759.0000000000001);
-
-  @override
   bool get isResearch => false;
 
   @override

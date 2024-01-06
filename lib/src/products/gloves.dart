@@ -12,9 +12,6 @@ class Gloves extends Product {
   Gloves.one() : super(quality: 0, quantity: d(1));
 
   @override
-  Money get baseSalary => d(138.0);
-
-  @override
   bool get isResearch => false;
 
   @override

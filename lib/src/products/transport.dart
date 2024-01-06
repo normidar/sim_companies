@@ -12,9 +12,6 @@ class Transport extends Product {
   Transport.one() : super(quality: 0, quantity: d(1));
 
   @override
-  Money get baseSalary => d(310.5);
-
-  @override
   bool get isResearch => false;
 
   @override

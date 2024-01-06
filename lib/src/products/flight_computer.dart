@@ -12,9 +12,6 @@ class FlightComputer extends Product {
   FlightComputer.one() : super(quality: 0, quantity: d(1));
 
   @override
-  Money get baseSalary => d(724.5);
-
-  @override
   bool get isResearch => false;
 
   @override

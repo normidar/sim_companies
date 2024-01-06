@@ -12,9 +12,6 @@ class CrudeOil extends Product {
   CrudeOil.one() : super(quality: 0, quantity: d(1));
 
   @override
-  Money get baseSalary => d(517.5);
-
-  @override
   bool get isResearch => false;
 
   @override

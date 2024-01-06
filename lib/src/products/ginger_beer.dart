@@ -12,9 +12,6 @@ class GingerBeer extends Product {
   GingerBeer.one() : super(quality: 0, quantity: d(1));
 
   @override
-  Money get baseSalary => d(241.49999999999997);
-
-  @override
   bool get isResearch => false;
 
   @override

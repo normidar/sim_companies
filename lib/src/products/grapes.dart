@@ -12,9 +12,6 @@ class Grapes extends Product {
   Grapes.one() : super(quality: 0, quantity: d(1));
 
   @override
-  Money get baseSalary => d(103.5);
-
-  @override
   bool get isResearch => false;
 
   @override

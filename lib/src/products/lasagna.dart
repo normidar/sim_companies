@@ -12,9 +12,6 @@ class Lasagna extends Product {
   Lasagna.one() : super(quality: 0, quantity: d(1));
 
   @override
-  Money get baseSalary => d(655.5);
-
-  @override
   bool get isResearch => false;
 
   @override

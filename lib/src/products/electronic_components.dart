@@ -12,9 +12,6 @@ class ElectronicComponents extends Product {
   ElectronicComponents.one() : super(quality: 0, quantity: d(1));
 
   @override
-  Money get baseSalary => d(379.50000000000006);
-
-  @override
   bool get isResearch => false;
 
   @override

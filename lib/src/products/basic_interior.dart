@@ -12,9 +12,6 @@ class BasicInterior extends Product {
   BasicInterior.one() : super(quality: 0, quantity: d(1));
 
   @override
-  Money get baseSalary => d(448.5);
-
-  @override
   bool get isResearch => false;
 
   @override
