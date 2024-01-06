@@ -146,4 +146,4 @@ export 'package:sim_companies/src/products/grapes.dart';
 export 'package:sim_companies/src/products/fodder.dart';
 export 'package:sim_companies/src/products/electronic_components.dart';
 export 'package:sim_companies/src/utils/decimal.dart';
-export 'package:sim_companies/src/sim_companies_base.dart';
+export 'package:sim_companies/src/text_generator/buying_text_generator.dart';
