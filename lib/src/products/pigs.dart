@@ -12,6 +12,9 @@ class Pigs extends Product {
   Pigs.one() : super(quality: 0, quantity: d(1));
 
   @override
+  bool get exchangeTradable => true;
+
+  @override
   bool get isResearch => false;
 
   @override

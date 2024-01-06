@@ -47,6 +47,9 @@ class $cName extends Product {
   $cName.one() : super(quality: 0, quantity: d(1));
 
   @override
+  bool get exchangeTradable => ${rd.exchangeTradable};
+
+  @override
   bool get isResearch => ${rd.research};
 
   @override

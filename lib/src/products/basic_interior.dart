@@ -12,6 +12,9 @@ class BasicInterior extends Product {
   BasicInterior.one() : super(quality: 0, quantity: d(1));
 
   @override
+  bool get exchangeTradable => true;
+
+  @override
   bool get isResearch => false;
 
   @override

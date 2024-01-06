@@ -12,6 +12,9 @@ class SubOrbital2ndStage extends Product {
   SubOrbital2ndStage.one() : super(quality: 0, quantity: d(1));
 
   @override
+  bool get exchangeTradable => false;
+
+  @override
   bool get isResearch => false;
 
   @override

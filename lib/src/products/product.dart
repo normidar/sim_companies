@@ -8,6 +8,7 @@ abstract class Product {
     required this.quality,
   });
 
+  bool get exchangeTradable;
   bool get isResearch;
   int get kindCode;
   String get name;
